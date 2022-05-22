@@ -1,0 +1,14 @@
+# 构建一个个人常用环境的Dockerfile
+# version 1.0
+# Author: WangNing   
+
+
+FROM centos:7
+
+# 维护者
+LABEL maintainer="i@ylimhs.cn"
+
+RUN yum update -y && yum install -y vim git
+
+EXPOSE 8888
+
